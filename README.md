@@ -5,13 +5,14 @@ This package contains assumes access to autotools. A shared object library libEP
 
 As an example of use see test_EPS09Wrapper.cc. After comiling the library, you can link and run the example. It should print out 0.767926.
 
-The relevant doxygen comments are included here for ease of reference.
+Constructor:
 
-/**
- * @brief Constructor
- * @brief A - the nuclear mass
- */
 AUEPS09(int A, int order=1)
+
+A - the nuclear mass
+
+order - 1=LO, 2=NLO
+
 
 /**
  * @brief Return the LO modification factor for a given parton,
@@ -35,5 +36,6 @@ AUEPS09(int A, int order=1)
  *            projectile or target
  * @param Q - the sqrt(Q^2) of the interaction
  */
+
 double pdfmod(int parton, int set, double x, double Q);
 
