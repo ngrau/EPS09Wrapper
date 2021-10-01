@@ -1,0 +1,43 @@
+#ignore these files from autotools
+aclocal.m4
+autom4te.cache
+compile
+config.guess
+config.sub
+configure
+depcomp
+install-sh
+ltmain.sh
+Makefile.in
+missing
+
+#from MacOS:
+.DS_Store
+
+#from emacs:
+*~
+\#*
+.\#*
+
+#standard compiled objects
+*.slo
+*.lo
+*.o
+*.obj
+*.gch
+*.pcm
+*.so
+*.dylib
+*.dll
+*.lai
+*.la
+*.a
+*.lib
+*_Dict.cc
+*.status
+
+#executables
+*.exe
+
+#output
+*.root
